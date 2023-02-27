@@ -3,7 +3,7 @@ const http = require('http');
 const hostname = '0.0.0.0';
 const port = 3000;
 
-require('dotenv').config()
+require('dotenv').config({ path: ".env" })
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
